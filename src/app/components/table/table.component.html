@@ -3,10 +3,10 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="header">
-                    <h4 class="title">Productos</h4>
+                    <h4 class="title">{{ table | uppercase}}</h4>
                 </div>
                 <div class="content table-responsive table-full-width">
-                    <table class="table table-striped">
+                    <table *ngIf="tableData.headerRow.length" class="table table-striped">
                         <thead>
                             <tr>
                                 <th *ngFor="let cell of tableData.headerRow"><b>{{ cell | uppercase}}</b></th>
@@ -15,13 +15,20 @@
                         <tbody>
                             <tr *ngFor="let row of tableData.dataRows">
                                 <ng-container *ngFor="let cell of row; let i = index">
-                                    <td *ngIf="!isObject(cell)">{{cell}}</td>
-                                    <td *ngIf="isObject(cell)">
+                                    <td *ngIf="!tableService.isObject(cell)">{{cell}}</td>
+                                    <td *ngIf="tableService.isObject(cell)">
                                         <button class="btn btn-red" (click)="open(cell, tableData.headerRow[i])">Ver</button>
                                     </td>
                                 </ng-container>
                             </tr>
                         </tbody>
+                    </table>
+                    <table *ngIf="!tableData.headerRow.length" class="table">
+                        <tr>
+                            <td class="text-center">
+                                <h1>NO HAY REGISTROS</h1>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>

@@ -6,9 +6,9 @@ import { BaseService } from './base.service';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductosService extends BaseService {
-  Enum = Productos;
-  url = 'assets/data/productos.json';
+export class ProveedoresService extends BaseService {
+  Enum = Proveedores;
+  url = 'assets/data/proveedores.json';
   constructor(private httpClient: HttpClient,
               private tableSvc: TableService) {
     super(httpClient, tableSvc);
@@ -16,10 +16,7 @@ export class ProductosService extends BaseService {
 }
 
 // Header de la tabla
-export enum Productos {
-  codigo = 'código',
+export enum Proveedores {
   nombre = 'nombre',
-  proveedor = 'proveedor',
-  precios = 'precios',
-  existencia = 'existencia'
+  direccion = 'dirección',
 }

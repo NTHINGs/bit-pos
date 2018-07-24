@@ -8,21 +8,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Local Modules
 import { AppRoutes } from './app.routing';
-import { FooterModule } from './shared/footer/footer.module';
-import { NavbarModule} from './shared/navbar/navbar.module';
-import { SidebarModule } from './sidebar/sidebar.module';
+import { FooterModule } from './components/shared/footer/footer.module';
+import { NavbarModule} from './components/shared/navbar/navbar.module';
+import { SidebarModule } from './components/sidebar/sidebar.module';
 import { MaterialModule } from './material/material.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserComponent } from './user/user.component';
-import { TableComponent } from './table/table.component';
-import { TypographyComponent } from './typography/typography.component';
-import { IconsComponent } from './icons/icons.component';
-import { MapsComponent } from './maps/maps.component';
-import { NotificationsComponent } from './notifications/notifications.component';
-import { UpgradeComponent } from './upgrade/upgrade.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UserComponent } from './components/user/user.component';
+import { TableComponent } from './components/table/table.component';
+import { TypographyComponent } from './components/typography/typography.component';
+import { IconsComponent } from './components/icons/icons.component';
+import { MapsComponent } from './components/maps/maps.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { UpgradeComponent } from './components/upgrade/upgrade.component';
 
 // Dialogs
 import { ComplexTableDialog } from './dialogs/complex-table/complex-table.component';

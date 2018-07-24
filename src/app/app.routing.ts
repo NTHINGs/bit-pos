@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 
-import { DashboardComponent }   from './dashboard/dashboard.component';
-import { UserComponent }   from './user/user.component';
-import { TableComponent } from './table/table.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UserComponent } from './components/user/user.component';
+import { TableComponent } from './components/table/table.component';
 
 export const AppRoutes: Routes = [
     {
@@ -20,6 +20,18 @@ export const AppRoutes: Routes = [
     },
     {
         path: 'productos',
+        component: TableComponent
+    },
+    {
+        path: 'proveedores',
+        component: TableComponent
+    },
+    {
+        path: 'clientes',
+        component: TableComponent
+    },
+    {
+        path: 'ventas',
         component: TableComponent
     },
     // {

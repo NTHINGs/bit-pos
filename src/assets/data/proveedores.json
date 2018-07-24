@@ -1,0 +1,10 @@
+[
+    {
+        "nombre": "PROVEEDOR S.A. DE C.V.",
+        "direccion": {
+            "calle": "prueba",
+            "numero": "prueba",
+            "colonia": "prueba"
+        }
+    }
+]
