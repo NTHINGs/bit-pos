@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Productos</h4>
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let cell of tableData.headerRow"><b>{{ cell | uppercase}}</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let row of tableData.dataRows">
+                                <ng-container *ngFor="let cell of row; let i = index">
+                                    <td *ngIf="!isObject(cell)">{{cell}}</td>
+                                    <td *ngIf="isObject(cell)">
+                                        <button class="btn btn-red" (click)="open(cell, tableData.headerRow[i])">Ver</button>
+                                    </td>
+                                </ng-container>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

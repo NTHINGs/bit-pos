@@ -1,0 +1,50 @@
+[
+    {
+        "codigo": "ABSRSDG1324",
+        "nombre": "Producto 1",
+        "proveedor": {
+            "nombre": "Proveedor 1"
+        },
+        "precios": {
+            "menudeo": 123.3,
+            "mayoreo": 100,
+            "test": {
+                "nombre": "esta es una prueba"
+            }
+        },
+        "existencia": {
+            "mostrador": 10,
+            "almacen": 50
+        }
+    },
+    {
+        "codigo": "ABSRSDG1324",
+        "nombre": "Producto 1",
+        "proveedor": {
+            "nombre": "Proveedor 1"
+        },
+        "precios": {
+            "menudeo": 123.3,
+            "mayoreo": 100
+        },
+        "existencia": {
+            "mostrador": 10,
+            "almacen": 50
+        }
+    },
+    {
+        "codigo": "ABSRSDG1324",
+        "nombre": "Producto 1",
+        "proveedor": {
+            "nombre": "Proveedor 1"
+        },
+        "precios": {
+            "menudeo": 123.3,
+            "mayoreo": 100
+        },
+        "existencia": {
+            "mostrador": 10,
+            "almacen": 50
+        }
+    }
+]
