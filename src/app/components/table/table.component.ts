@@ -26,7 +26,7 @@ export class TableComponent implements OnInit{
         this.router.url.subscribe(
             url => {
                 this.table = url[0].path;
-                this.injector.get(Tablas[this.table]).getAll().subscribe(
+                this.injector.get(Tablas[this.table].service).getAll().subscribe(
                     (tableData: any) => {
                         this.tableData = tableData;
                     }
@@ -39,6 +39,14 @@ export class TableComponent implements OnInit{
         this.dialog.open(ComplexTableDialog, {
             width: '500px',
             data: {cell, title}
+        });
+    }
+
+    add() {
+        // Specific dialog pending
+        this.dialog.open(ComplexTableDialog, {
+            width: '800px',
+            data: {}
         });
     }
 }

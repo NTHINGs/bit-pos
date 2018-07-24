@@ -4,8 +4,20 @@ import { ClientesService } from "../services/clientes.service";
 import { VentasService } from "../services/ventas.service";
 
 export const Tablas = {
-    productos: ProductosService,
-    proveedores: ProveedoresService,
-    clientes: ClientesService,
-    ventas: VentasService
+    productos: { 
+        service: ProductosService,
+        dialog: null
+    },
+    proveedores: {
+        service: ProveedoresService,
+        dialog: null
+    },
+    clientes: {
+        service: ClientesService,
+        dialog: null
+    },
+    ventas: {
+        service: VentasService,
+        dialog: null
+    }
 };
