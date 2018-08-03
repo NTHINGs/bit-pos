@@ -1,0 +1,23 @@
+{
+    "nombre_negocio": "Miscelanea 123",
+    "giro": "abarrotes",
+    "modo_inventario": {
+        "activado": true,
+        "modo": "costo_promedio"
+    },
+    "credito": false,
+    "productos_comunes": true,
+    "formas_de_pago": {
+        "efectivo_incompleto": false,
+        "dolares": false,
+        "tarjetas": true,
+        "vales_despensa": true
+    },
+    "ticket": {
+        "lineas_en_blanco_arriba": 0,
+        "logotipo": "pendiente",
+        "encabezado": "Miscelanea 123",
+        "pie_de_pagina": "Gracias por su compra",
+        "lineas_en_blanco_abajo": 0
+    }
+}

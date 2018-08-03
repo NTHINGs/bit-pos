@@ -1,0 +1,43 @@
+[
+    {
+        "usuario": "admin",
+        "pass": "12345",
+        "nombre": "Fulano de tal",
+        "privilegios": {
+            "ventas": {
+                "productos_comunes": true,
+                "aplicar_mayoreo": true,
+                "aplicar_descuentos": true,
+                "revisar_historial_ventas": true,
+                "registrar_entradas_efectivo": true,
+                "registrar_salidas_efectivo": true,
+                "cobrar_ticket": true,
+                "cobrar_creditos": true,
+                "cancelar_tickets": true,
+                "eliminar_productos": true,
+                "facturar": true
+            },
+            "clientes": {
+                "administrar_creditos": true,
+                "modificar_clientes": true
+            },
+            "productos": {
+                "escribir": true,
+                "ver_reporte": true,
+                "crear_promociones": true
+            },
+            "inventario": {
+                "agregar": true,
+                "reportes": true,
+                "ajustar": true
+            },
+            "otros": {
+                "corte_turno": true,
+                "corte_dia": true,
+                "ver_ganancia": true,
+                "cambiar_configuracion": true,
+                "acceder_reportes_ventas": true
+            }
+        }
+    }
+]

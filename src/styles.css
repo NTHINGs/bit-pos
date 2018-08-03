@@ -1,23 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-.btn-red {
-    color: #DD0330!important;
-    border-color: #DD0330!important;
+.btn {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.btn-red {
+    color: #DD0330!important;
+    border-color: #DD0330!important;
 }
 
 .btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active, .open>.dropdown-toggle.btn-red {
     color: #fff!important;
     background-color: #DD0330!important;
     border-color: #DD0330!important; /*set the color you want here*/
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 .icon {
     padding-right: 5px;
+}
+
+.nav-item {
+    width: 100%;
 }

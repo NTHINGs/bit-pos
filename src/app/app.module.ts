@@ -20,7 +20,8 @@ import { UserComponent } from './components/user/user.component';
 import { TableComponent } from './components/table/table.component';
 
 // Dialogs
-import { ComplexTableDialog } from './dialogs/complex-table/complex-table.component';
+import { ComplexTableDialog } from './dialogs/complex-table/complex-table.dialog';
+import { CreationDialog } from './dialogs/creation-dialog/creation.dialog';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ComplexTableDialog } from './dialogs/complex-table/complex-table.compon
     DashboardComponent,
     UserComponent,
     TableComponent,
-    ComplexTableDialog
+    ComplexTableDialog,
+    CreationDialog
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { ComplexTableDialog } from './dialogs/complex-table/complex-table.compon
   ],
   providers: [],
   entryComponents: [
-    ComplexTableDialog
+    ComplexTableDialog,
+    CreationDialog
   ],
   bootstrap: [AppComponent]
 })

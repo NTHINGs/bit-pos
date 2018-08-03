@@ -10,12 +10,12 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: 'panel', title: 'Panel',  icon: 'ti-panel', class: '' },
-    { path: 'pos', title: 'Punto De Venta',  icon:'ti-shopping-cart', class: '' },
-    { path: 'productos', title: 'Productos',  icon:'ti-view-list-alt', class: '' },
-    { path: 'proveedores', title: 'Proveedores',  icon:'ti-truck', class: '' },
-    { path: 'clientes', title: 'Clientes',  icon:'ti-bag', class: '' },
-    { path: 'ventas', title: 'Ventas',  icon:'ti-stats-up', class: '' },
+    { path: 'panel', title: 'Panel',  icon: 'ti-panel', class: 'nav-item' },
+    { path: 'pos', title: 'Punto De Venta',  icon:'ti-shopping-cart', class: 'nav-item' },
+    { path: 'productos', title: 'Productos',  icon:'ti-view-list-alt', class: 'nav-item' },
+    { path: 'proveedores', title: 'Proveedores',  icon:'ti-truck', class: 'nav-item' },
+    { path: 'clientes', title: 'Clientes',  icon:'ti-bag', class: 'nav-item' },
+    { path: 'ventas', title: 'Ventas',  icon:'ti-stats-up', class: 'nav-item' },
     // { path: 'typography', title: 'Typography',  icon:'ti-text', class: '' },
     // { path: 'icons', title: 'Icons',  icon:'ti-pencil-alt2', class: '' },
     // { path: 'maps', title: 'Maps',  icon:'ti-map', class: '' },

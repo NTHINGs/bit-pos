@@ -10,8 +10,8 @@ declare interface TableData {
 @Component({
     selector: 'complex-table',
     moduleId: module.id,
-    templateUrl: 'complex-table.component.html',
-    styleUrls: ['complex-table.component.css']
+    templateUrl: 'complex-table.dialog.html',
+    styleUrls: ['complex-table.dialog.css']
 })
 
 export class ComplexTableDialog {
