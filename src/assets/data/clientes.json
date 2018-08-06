@@ -1,12 +1,13 @@
 [
     {
         "rfc": "ABCD293596",
-        "tarjeta": "?",
         "categoria_impuesto": "1",
-        "deuda": {
-            "cantidad": 0,
-            "fecha": 123454356
-        },
+        "deudas": [
+            {
+                "cantidad": 0,
+                "fecha": 123454356
+            }
+        ],
         "nombre": "CLIENTE S.A. DE C.V.",
         "contacto": {
             "telefono": "123456789",

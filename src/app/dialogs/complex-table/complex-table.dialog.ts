@@ -9,18 +9,17 @@ declare interface TableData {
 
 @Component({
     selector: 'complex-table',
-    moduleId: module.id,
     templateUrl: 'complex-table.dialog.html',
     styleUrls: ['complex-table.dialog.css']
 })
 
-export class ComplexTableDialog {
+export class ComplexTableDialogComponent {
     public tableData: TableData = {
         headerRow: [],
         dataRows: [[]]
     };
 
-    constructor(public dialogRef: MatDialogRef<ComplexTableDialog>,
+    constructor(public dialogRef: MatDialogRef<ComplexTableDialogComponent>,
                 @Inject(MAT_DIALOG_DATA) public data: any,
                 public dialog: MatDialog,
                 public tableService: TableService) {
@@ -28,7 +27,7 @@ export class ComplexTableDialog {
     }
 
     open(cell, title) {
-        this.dialog.open(ComplexTableDialog, {
+        this.dialog.open(ComplexTableDialogComponent, {
             width: '500px',
             data: {cell, title}
         });

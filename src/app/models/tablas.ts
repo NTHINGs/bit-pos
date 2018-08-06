@@ -4,11 +4,10 @@ import { ClientesService } from '../services/clientes.service';
 import { VentasService } from '../services/ventas.service';
 
 export const Tablas = {
-    productos: { 
+    productos: {
         service: ProductosService,
         dialog: null,
         form: {
-            
         }
     },
     proveedores: {

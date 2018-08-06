@@ -17,6 +17,10 @@ export class ClientesService extends BaseService {
 
 // Header de la tabla
 export enum Clientes {
+  rfc = 'RFC',
+  categoria_impuesto = 'categoría impuesto',
+  deudas = 'deudas',
   nombre = 'nombre',
+  contacto = 'contacto',
   direccion = 'dirección',
 }

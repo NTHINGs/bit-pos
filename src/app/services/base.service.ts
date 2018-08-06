@@ -1,5 +1,5 @@
-import { HttpClient } from "@angular/common/http";
-import { TableService } from "./table.service";
+import { HttpClient } from '@angular/common/http';
+import { TableService } from './table.service';
 import { map } from 'rxjs/operators';
 
 export abstract class BaseService {

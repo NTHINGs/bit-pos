@@ -1,14 +1,15 @@
-import { PdFreeAngularcliPage } from './app.po';
+import { AngularElectronPage } from './app.po';
+import { browser, element, by } from 'protractor';
 
-describe('bit-pos App', () => {
-  let page: PdFreeAngularcliPage;
+describe('angular-electron App', () => {
+  let page: AngularElectronPage;
 
   beforeEach(() => {
-    page = new PdFreeAngularcliPage();
+    page = new AngularElectronPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+  it('should display message saying App works !', () => {
+    page.navigateTo('/');
+    expect(element(by.css('app-home h1')).getText()).toMatch('App works !');
   });
 });

@@ -3,14 +3,13 @@ import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
 
 @Component({
     selector: 'creation-dialog',
-    moduleId: module.id,
     templateUrl: 'creation.dialog.html',
     styleUrls: ['creation.dialog.css']
 })
 
-export class CreationDialog {
+export class CreationDialogComponent {
 
-    constructor(public dialogRef: MatDialogRef<CreationDialog>,
+    constructor(public dialogRef: MatDialogRef<CreationDialogComponent>,
                 @Inject(MAT_DIALOG_DATA) public data: any,
                 public dialog: MatDialog) {
     }

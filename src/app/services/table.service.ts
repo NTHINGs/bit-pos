@@ -9,7 +9,7 @@ export declare interface TableData {
   providedIn: 'root',
 })
 export class TableService {
-    
+
     constructor() { }
 
     getTableData(data, Enum, complex = false) {
@@ -18,7 +18,7 @@ export class TableService {
             dataRows: []
         };
 
-        if(!data) {
+        if (!data) {
             return tableData;
         }
 
@@ -38,20 +38,22 @@ export class TableService {
     }
 
     private logic(object, tableData, complex, Enum) {
+        const row = [];
         if (!complex) {
-            tableData.headerRow = Object.keys(object).map(
-                key => {
-                    return Enum[key];
+            tableData.headerRow = [];
+            for (const key of Object.keys(object)) {
+                const header = Enum[key];
+                if (header) {
+                    tableData.headerRow.push(header);
+                    row.push(object[key]);
                 }
-            )
+            }
         } else {
             tableData.headerRow = Object.keys(object);
+            for (const key of Object.keys(object)) {
+                row.push(object[key]);
+            }
+            tableData.dataRows.push(row);
         }
-
-        const row = [];
-        for (const key of Object.keys(object)) {
-            row.push(object[key]);
-        }
-        tableData.dataRows.push(row);
     }
 }

@@ -2,17 +2,15 @@ import { Component, OnInit, Injector } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
 import { TableData, TableService } from '../../services/table.service';
-import { ComplexTableDialog } from '../../dialogs/complex-table/complex-table.dialog';
+import { ComplexTableDialogComponent } from '../../dialogs/complex-table/complex-table.dialog';
 import { Tablas } from '../../models/tablas';
-import { CreationDialog } from '../../dialogs/creation-dialog/creation.dialog';
+import { CreationDialogComponent } from '../../dialogs/creation-dialog/creation.dialog';
 
 @Component({
     selector: 'table-cmp',
-    moduleId: module.id,
     templateUrl: 'table.component.html'
 })
-
-export class TableComponent implements OnInit{
+export class TableComponent implements OnInit {
     public tableData: TableData = {
         headerRow: [],
         dataRows: []
@@ -37,7 +35,7 @@ export class TableComponent implements OnInit{
     }
 
     open(cell, title) {
-        this.dialog.open(ComplexTableDialog, {
+        this.dialog.open(ComplexTableDialogComponent, {
             width: '500px',
             data: {cell, title}
         });
@@ -45,7 +43,7 @@ export class TableComponent implements OnInit{
 
     add() {
         // Specific dialog pending
-        this.dialog.open(CreationDialog, {
+        this.dialog.open(CreationDialogComponent, {
             width: '800px',
             data: {}
         });
